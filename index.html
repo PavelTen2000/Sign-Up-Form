@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="main">
+            <div id="image">
+                <div id="logo">
+                    <img src="./images/odin-lined.png" alt="Kazakh flag" />
+                    <h1>Kazakhstan's nature!</h1>
+                </div>
+            </div>
+            <div id="content">
+                <div id="upper">
+                    <div class="text">
+                        This is not a real online service! Lorem ipsum dolor sit
+                        amet consectetur, adipisicing elit. Necessitatibus,
+                        commodi! Sign up now to get started.
+                    </div>
+                    <div class="text">You know you want to.</div>
+                </div>
+                <div id="middle">
+                    <div>Let's do this!</div>
+                    <form id="my-form">
+                        <label for="name">
+                            First name
+                            <input type="text" id="name" required />
+                        </label>
+                        <label for="last-name"
+                            >Last name
+                            <input type="text" id="last-name" required />
+                        </label>
+                        <label for="email"
+                            >Email
+                            <input type="email" id="email" />
+                        </label>
+                        <label for="phone"
+                            >Phone Number
+                            <input type="tel" id="phone" />
+                        </label>
+                        <label for="password"
+                            >Password
+                            <input
+                                type="password"
+                                id="password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            />
+                        </label>
+                        <label for="confirm-password"
+                            >Confirm password
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            />
+                        </label>
+                    </form>
+                </div>
+                <div id="bottom">
+                    <button type="submit" id="create-account" form="my-form">
+                        CREATE ACCOUNT
+                    </button>
+                    <p>
+                        Already have an account? <span id="purple">LOG IN</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

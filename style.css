@@ -1,0 +1,134 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: logo-font;
+    src: url(./Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: text-font;
+    src: url(./FontsFree-Net-Kiona-Bold.ttf);
+}
+#main {
+    display: flex;
+}
+#image {
+    background-image: url(./images/final.jpg);
+    width: 35vw;
+    height: 100vh;
+    background-size: auto;
+}
+
+#logo {
+    background-color: rgba(0, 0, 0, 0.349);
+    position: relative;
+    top: 20vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#logo > img {
+    width: 4rem;
+}
+
+#logo > h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: logo-font;
+}
+#content {
+    width: 65vw;
+    background-color: rgba(249, 250, 251, 255);
+}
+
+#upper {
+    height: 20vh;
+}
+
+.text {
+    position: relative;
+    top: 3vh;
+    font-size: 1.4rem;
+    font-family: text-font;
+    margin: 30px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+#middle {
+    background-color: white;
+    height: 40vh;
+    box-shadow: -15px 0 10px 0 rgba(0, 0, 0, 0.212);
+}
+
+button#create-account {
+    padding: 0.8rem 1.1rem;
+    font-size: 1.3rem;
+    background-color: rgb(173, 73, 173);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+#bottom > p {
+    margin-left: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+button#create-account:hover {
+    background-color: rgb(126, 39, 126);
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    gap: 3px;
+}
+
+#middle > div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 30px;
+    padding-top: 30px;
+}
+
+input {
+    font-family: text-font;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid #e5e7eb;
+    width: 220px;
+}
+
+input:focus {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+    border: none;
+}
+
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100);
+}
+input:focus:valid {
+    border: rgb(0, 183, 255) 2px solid;
+}
+
+span#purple {
+    color: blueviolet;
+}
